@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Socialbook</title>
+    
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a79c1cb565.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-left">
+            <img src="Icons/logo.png" class="logo">
+            <ul>
+                <li><img src="Icons/video.png"></li>
+                <li><img src="Icons/notification.png"></li>
+                <li><img src="Icons/inbox.png"></li>
+            </ul>
+
+        </div>
+        
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="Icons/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="message-icon">
+                <img src="Icons/208-2085666_message-png-image-with-transparent-background-people-icon.png" class="message">
+            </div>
+
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="icons/profile-pic.png">
+            </div>
+
+            <div class="setting-menu">
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+                <div class="setting-menu-inner">
+                    <div class="user-profile">
+                        <img src="Icons/profile-pic.png">
+                        <div>
+                            <p>Ahmed Sadik</p>
+                            <a href="profile.html">See Your Profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="Icons/feedback.png">
+                        <div>
+                            <p>Give Feedback</p>
+                            <a href="#">Take survey's to let us know how we can improve new features</a>
+                        </div>
+                    </div>
+                    <hr>
+                     
+                    <div class="settings-links">
+                        <img src="Icons/setting.png" class="settings-icon">
+                        <a href="#">Settings & Privacy <img src="Icons/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="Icons/help.png" class="settings-icon">
+                        <a href="#">Help & Support <img src="Icons/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="Icons/display.png" class="settings-icon">
+                        <a href="#">Display & Accessibility <img src="Icons/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="Icons/logout.png" class="settings-icon">
+                        <a href="#">Logout <img src="Icons/arrow.png" width="10px"></a>
+                    </div>
+
+                </div>
+              
+
+            </div>
+           
+
+        </div>
+
+    </div>
+    
+    <div class="container">
+        <!-- left-sidebar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="Icons/news.png"> Latest News</a>
+                <a href="#"><img src="Icons/friends.png"> Friends</a>
+                <a href="#"><img src="Icons/group.png"> Group</a>
+                <a href="#"><img src="Icons/marketplace.png"> Marketplace</a>
+                <a href="#"><img src="Icons/watch.png"> watch</a>
+                <a href="#">See more</a>
+            </div>
+            <div class="short-cut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="Icons/shortcut-1.png"> Learn Css</a>
+                <a href="#"><img src="Icons/shortcut-2.png"> Learn HTML5</a>
+                <a href="#"><img src="Icons/shortcut-3.png"> Latest fontawesome</a>
+                <a href="#"><img src="Icons/shortcut-4.png"> Learn Java</a>
+            </div>
+
+        </div>
+        <!-- main-content -->
+        <div class="main-content">
+            <div class="story-galary">
+                <div class="story story1">
+                    <img src="Icons/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="Icons/member-3.png">
+                    <p>Casho AbdiShakur</p>
+                </div>
+                <div class="story story3">
+                    <img src="Icons/member-1.png">
+                    <p>Ahmed Bashir</p>
+                </div>
+                <div class="story story4">
+                    <img src="Icons/member-4.png">
+                    <p>Mustafa Ahmed</p>
+                </div>
+                <div class="story story5">
+                    <img src="Icons/member-2.png">
+                    <p>Sadik #Welcome To Pedpeda</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="Icons/profile-pic.png">
+                    <div>
+                        <p>Ahmed Sadik</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind Ahmed Sadik"></textarea>
+                    <div class="add-post-links">
+                        <a href=""><img src="Icons/live-video.png"> Live Video</a>
+                        <a href=""><img src="Icons/photo.png"> Photo/video</a>
+                        <a href=""><img src="Icons/feeling.png"> Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Icons/profile-pic.png">
+                        <div>
+                            <p>Ahmed Sadik</p>
+                            <span>Feb 02 2022 5:30pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                   
+                <p class="post-text">Follow me on Instagram to check my tutorials <span>@Do cardio with me</span> to recieve amazing content.
+                To learn cardio! #Follow me on Youtube at Sumi-Qurox Channel. <a href="#">#CardioTutorials</a>
+                <a href="#">#Youtube Channel</a></p>
+                <img src="Icons/feed-image-1.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="Icons/like-blue.png"> 120</div>
+                        <div><img src="Icons/comments.png"> 45</div>
+                        <div><img src="Icons/share.png"> 20</div> 
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="Icons/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Icons/profile-pic.png">
+                        <div>
+                            <p>Ahmed Sadik</p>
+                            <span>Feb 02 2022 5:30pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                   
+                <p class="post-text">Like and share this video with friends, tag <span>@Do cardio with me</span> to recieve amazing content.
+                To learn cardio! #Follow me on Youtube at Sumi-Qurox Channel. <a href="#">#CardioTutorials</a>
+                <a href="#">#Youtube Channel</a></p>
+                <img src="Icons/feed-image-2.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="Icons/like.png"> 120</div>
+                        <div><img src="Icons/comments.png"> 45</div>
+                        <div><img src="Icons/share.png"> 20</div> 
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="Icons/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Icons/profile-pic.png">
+                        <div>
+                            <p>Ahmed Sadik</p>
+                            <span>Feb 02 2022 5:30pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                   
+                <p class="post-text">Like and share this video with friends, tag <span>@Do cardio with me</span> to recieve amazing content.
+                To learn cardio! #Follow me on Youtube at Sumi-Qurox Channel. <a href="#">#CardioTutorials</a>
+                <a href="#">#Youtube Channel</a></p>
+                <img src="Icons/feed-image-3.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="Icons/like.png"> 120</div>
+                        <div><img src="Icons/comments.png"> 45</div>
+                        <div><img src="Icons/share.png"> 20</div> 
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="Icons/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Icons/profile-pic.png">
+                        <div>
+                            <p>Ahmed Sadik</p>
+                            <span>Feb 02 2022 5:30pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                   
+                <p class="post-text">Like and share this video with friends, tag <span>@Do cardio with me</span> to recieve amazing content.
+                To learn cardio! #Follow me on Youtube at Sumi-Qurox Channel. <a href="#">#CardioTutorials</a>
+                <a href="#">#Youtube Channel</a></p>
+                <img src="Icons/feed-image-4.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="Icons/like.png"> 120</div>
+                        <div><img src="Icons/comments.png"> 45</div>
+                        <div><img src="Icons/share.png"> 20</div> 
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="Icons/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Icons/profile-pic.png">
+                        <div>
+                            <p>Ahmed Sadik</p>
+                            <span>Feb 02 2022 5:30pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                   
+                <p class="post-text">Like and share this video with friends, tag <span>@Do cardio with me</span> to recieve amazing content.
+                To learn cardio! #Follow me on Youtube at Sumi-Qurox Channel. <a href="#">#CardioTutorials</a>
+                <a href="#">#Youtube Channel</a></p>
+                <img src="Icons/feed-image-5.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="Icons/like.png"> 120</div>
+                        <div><img src="Icons/comments.png"> 45</div>
+                        <div><img src="Icons/share.png"> 20</div> 
+                    </div>
+
+                    <div class="post-profile-icon">
+                        <img src="Icons/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+
+        </div>
+        <!-- right-sidebar -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Sadik Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Marketing Events</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Sadik Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Ads</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="Icons/advertisement.png" class="sidebar-ads">
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="Icons/member-1.png">
+                </div>
+                <p>Sumi</p>
+            </div> 
+            <div class="online-list">
+                <div class="online">
+                    <img src="Icons/member-2.png">
+                </div>
+                <p>Ahmed Bashir</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="Icons/member-3.png">
+                </div>
+                <p>Casho AbdiShakur</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <p>CopyRight 2022 - @GO Do Cardio With Me</p>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
